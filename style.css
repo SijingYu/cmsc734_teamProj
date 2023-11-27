@@ -15,6 +15,13 @@ body {
     counter-reset: ref;
     counter-reset: ref-note;
   }
+body author{
+  margin-top: 30px; 
+  color: #20649f;
+  font-size: 30px;
+  font-family: cronos-pro, Georgia, serif;
+  font-weight: bold;
+}
 
 /* Paragraph styling */
 p {
