@@ -1,48 +1,82 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lab 6 - Cars</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity's Social Dance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#">
+    <!-- Add other meta tags and links as needed -->
 </head>
 <body>
-    <div id="main">
-        <div style="position: absolute; top: 300px;">
-            <div>
-                <label for="categorySelect">Y Scale:</label>
-            </div>
-            <select class="custom-select small" id="yScaleSelect" onchange="onYScaleChanged()">
-              <option value="economy (mpg)">economy (mpg)</option>
-              <option value="cylinders">cylinders</option>
-              <option value="displacement (cc)">displacement (cc)</option>
-              <option selected value="power (hp)">power (hp)</option>
-              <option value="weight (lb)">weight (lb)</option>
-              <option value="0-60 mph (s)">0-60 mph (s)</option>
-              <option value="year">year</option>
-            </select>
-        </div>
-        <div style="margin-left: 160px;">
-            <svg width="600" height="600" style="border: 1px solid #777;">
-            </svg>
-        </div>
-        <div style="margin-left: 380px;">
-            <label for="categorySelect">X Scale:</label>
-            <select class="custom-select small" id="xScaleSelect" onchange="onXScaleChanged()">
-              <option selected value="economy (mpg)">economy (mpg)</option>
-              <option value="cylinders">cylinders</option>
-              <option value="displacement (cc)">displacement (cc)</option>
-              <option value="power (hp)">power (hp)</option>
-              <option value="weight (lb)">weight (lb)</option>
-              <option value="0-60 mph (s)">0-60 mph (s)</option>
-              <option value="year">year</option>
-            </select>
-        </div>
-    </div>
+    <header>
+        <h1>How Social Factors Drive Changes<br> in Electricity Production and Consumption</h1>
+    </header>
+    <section id="introduction">
+        <p>Our journey through the ever-evolving landscape of electricity generation and consumption is a complex tale, interwoven with the threads of social change, technological advancement, and environmental consciousness. As we embark on this narrative, we delve into how our societies' shifting priorities and actions have reshaped the way we produce and consume electricity, influencing everything from fuel choices to pricing structures.</p>
+
+    </section>
+    <!-- RQ1 : Sijing -->
+    <section id="electricity-generation"> 
+        <h2>Decades of Shift in Fuel Consumption</h2>
+        <p>The story begins in a world where coal was king. Its reign, marked by high dependency in electricity generation, has been challenged over the decades. This transformation is vividly captured in a descending line graph for coal, countered by the rising trajectory of natural gas. These trends are not merely data points; they represent a societal shift towards cleaner energy, driven by environmental concerns and technological innovations that have made natural gas a more attractive and feasible option. This shift in fuel consumption sets the stage for our next chapter, where the implications of these changes become evident in the realm of global carbon emissions.
+        </p>
+        <!-- Add content or data visualization elements here -->
+        <p>The reduction in coal usage not only reflects changes in energy production but also leads us directly into the heart of environmental impact, particularly in terms of carbon emissions.
+        </p>
+    </section>
+
+    <!-- RQ2 : Sijing -->
+    <section id="carbon-emissions"> 
+        <h2>The Changing Face of Carbon Emissions</h2>
+        <p>In the narrative of carbon emissions, we witness a dynamic plot - an initial increase in emissions, followed by a subsequent decrease. The role of coal in this story is pivotal; its diminishing contribution marks a significant turn towards a more sustainable future. A dynamic pie chart evolving over time illustrates this shift, with the section representing coal’s emissions gradually shrinking. This visual transformation is a powerful testament to global efforts in reducing carbon footprints and embracing cleaner energy sources. It is a change influenced not just by technology but also by a growing social awareness and governmental policies aiming at a sustainable future. This awareness is not limited to the production of electricity but extends into its consumption, as we will see in the next segment.
+        </p>
+        <!-- Add content or data visualization elements here -->
+        <p>The changes in carbon emissions are closely linked to how different sectors consume electricity, revealing another layer of our evolving energy story.
+        </p>
+    </section>
+
+    <!-- RQ3 : Zining -->
+    <section id="electricity-consumption"> 
+        <h2>Sectoral Energy Consumption Evolution</h2>
+        <p>As we turn the pages to the consumption side of the story, distinct patterns emerge across various sectors. The commercial sector, in particular, has emerged as the main stage for electricity consumption. This trend is dramatically depicted through bar graphs, where the towering bars for the commercial sector overshadow those for residential and industrial sectors. These patterns reflect not just economic growth but also changes in lifestyles and technological advancements, where commercial spaces have become more energy-intensive. However, this trend is balanced by a more moderate increase in electricity consumption in the residential and industrial sectors, indicative of efficiency improvements and changing consumption behaviors. The interplay of these sector-specific trends leads us to another critical aspect of our story - the cost of electricity.</p>
+        <p>The evolving pattern of electricity consumption across sectors naturally brings us to the discussion of its economic implications, particularly in terms of pricing.
+        </p>
+        <div id="chart-rq3"></div>
+    </section>
+
+    <!-- RQ4 : Zining -->
+    <section id="electricity-prices"> 
+        <h2>The Climbing Ladder of Electricity Prices</h2>
+        <p>Our narrative now takes a financial turn. The steady climb of electricity prices across all sectors is a critical subplot in our story. Line graphs depicting this upward trend reflect not just market dynamics but also the increasing costs of incorporating sustainable energy sources and upgrading infrastructure. Interestingly, the transportation sector has witnessed a less steep increase in recent years, a clue that directs our attention to the burgeoning field of electric vehicles (EVs). This segment of the story highlights how economic factors, alongside technological advancements, are influencing consumption patterns and driving innovation in the energy sector.
+        </p>
+        <p>The subtle nuances in electricity pricing, particularly in the transportation sector, set the stage for the next evolution in our energy narrative – the rise of electric vehicles.
+        </p>
+        <div id="chart-scatter"></div>
+    </section>
+
+    <!-- RQ5 : Ziyue -->
+    <section id="electricity-vehicles"> 
+        <h2>Electrification of Transportation</h2>
+        <p>In the final chapter of our current narrative, the spotlight turns to electric vehicles (EVs). The growth in EV infrastructure and advancements in manufacturing are central to this story. A timeline graph shows the correlation between the proliferation of charging stations, improvements in battery technology, and the rising adoption rates of EVs. This trend is a response not only to technological innovation but also to a societal push towards reducing carbon emissions and dependency on fossil fuels. The evolution of EVs is a reflection of a broader societal commitment to sustainability, influenced by environmental concerns, policy changes, and consumer preferences.
+        </p>
+        <!-- Add content or data visualization elements here -->
+    </section>
+
+    <section id="conclusion"> 
+        <h2>Conclusion</h2>
+        <p>In conclusion, our narrative on the transformation of electricity production and consumption is a multifaceted saga, shaped by the undercurrents of social change. From the decline in coal usage to the rise of electric vehicles, each element of this story is interlinked, highlighting how societal values, technological advancements, and environmental concerns drive the energy sector. This tale, rich in data and insights, demonstrates the powerful role of societal influence in sculpting the future of electricity. As our story continues to unfold, it is clear that the chapters yet to be written will be guided by the ongoing dialogue between society and technology, in pursuit of a more sustainable and efficient energy future.
+        </p>
+    </section>
+
+
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+
+    <!-- D3.js and custom script -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="d3-tip.js"></script>
+    <script src="main.js"></script>
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-<script src="https://d3js.org/d3.v5.min.js"></script>
-<script src="./main.js"></script>
 </html>
