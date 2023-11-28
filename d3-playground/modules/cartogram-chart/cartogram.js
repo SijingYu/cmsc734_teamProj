@@ -3,11 +3,13 @@ let combined_data;
 
 
 const chartsInfo = {
-  income: "Interesting insight: Wealthier states tend to have less obesity.",
-  smokes: "Interesting insight: Smoking has a positive correlation obesity.",
-  age: "Interesting insight: Obesity rate is mostly found in the age group of 35 to 40 years.",
-  poverty: "Interesting insight: Positive correlation between Obesity and Poverty. Southern states tend to have the highest rates of obesity, poverty.",
-  healthcare: "Interesting insight: States with lack of health coverage tend to have more obesity.Texas being an outlier as it has the highest % lack in healthcare.",
+  // income: "Interesting insight: Wealthier states tend to have less obesity.",
+  // smokes: "Interesting insight: Smoking has a positive correlation obesity.",
+  // age: "Interesting insight: Obesity rate is mostly found in the age group of 35 to 40 years.",
+  // poverty: "Interesting insight: Positive correlation between Obesity and Poverty. Southern states tend to have the highest rates of obesity, poverty.",
+  // healthcare: "Interesting insight: States with lack of health coverage tend to have more obesity.Texas being an outlier as it has the highest % lack in healthcare.",
+  oil_price: "Interesting insight: States with higher oil price tend to have more EV.",
+  Gasoline: "Interesting insight: Positive correlation between the number of gasoline cars and EV."
 }
 
 // chart parameters
@@ -294,7 +296,7 @@ const updateScatter = (caller) => {
     .append('g')
     .attr('class', 'y axis')
     .call(yAxis)
-    .call(addLabel, 'EV count', -135, 15, -90);
+    .call(addLabel, 'EV count', -135, -15, -90);
 
   // show the axis
   xAxisDraw.transition()
