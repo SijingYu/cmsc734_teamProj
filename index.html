@@ -7,6 +7,66 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="#">
     <!-- Add other meta tags and links as needed -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
+    <!-- <title>USA Obesity Story</title> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      p {
+        font-family: monospace;
+      }
+
+      body {
+        height: 2000px;
+        /* font-family: monospace; */
+      }
+
+      .chart > p {
+        color: white;
+        font-style: italic;
+      }
+
+      h1 {
+        text-align: center;
+        text-transform: uppercase;
+        background-color: rgb(180, 200, 223);
+        margin: 0;
+        padding: 24px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+      }
+
+      h2 {
+        margin-top: 64px;
+        text-align: center;
+        text-transform: capitalize;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+      }
+
+      footer {
+        text-align: center;
+        color: slategray;
+        padding: 15px;
+      }
+
+      .hr {
+        border-top: 1px solid rgb(180, 200, 223);
+      }
+
+      form {
+        font-size: 14px;
+      }
+
+      p {
+        font-size: larger;
+      }
+    </style>
+    <link rel="stylesheet" href="styles/line-chart.css" />
+    <link rel="stylesheet" href="styles/cartogram.css" />
 </head>
 <body>
     <header>
@@ -62,7 +122,59 @@
         <p>In the final chapter of our current narrative, the spotlight turns to electric vehicles (EVs). The growth in EV infrastructure and advancements in manufacturing are central to this story. A timeline graph shows the correlation between the proliferation of charging stations, improvements in battery technology, and the rising adoption rates of EVs. This trend is a response not only to technological innovation but also to a societal push towards reducing carbon emissions and dependency on fossil fuels. The evolution of EVs is a reflection of a broader societal commitment to sustainability, influenced by environmental concerns, policy changes, and consumer preferences.
         </p>
         <!-- Add content or data visualization elements here -->
+    
+
+    <!-- <h1 class="chartTitle">USA EV Story</h1> -->
+
+    <!-- <h1 class="chartTitle">USA EV Story</h1> -->
+
+    <div id="cartogram-container">
+      <!-- Slider https://bl.ocks.org/officeofjane/47d2b0bfeecfcb41d2212d06d095c763 -->
+      <div id="cartogram_controls_container" style="height: 110px">
+        <div id="year_scrubber">
+          <input id="cartogram_year" value="2016" type="range" min="2016" max="2022" step="1" list="tickmarks" />
+          <datalist id="tickmarks">
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+          </datalist>
+        </div>
+        <div id="cartogram_controls">
+          <button id="play-button">Play</button>
+        </div>
+      </div>
+
+      <!-- Description of the chart -->
+      <div style="height: 100px" id="chart-info">
+        <h2 id="chart-title">EV Cartogram</h2>
+        <p id="chart-description" style="text-align: center; max-width: 30%; margin: auto">
+          EV trend across the States in the US is rising
+        </p>
+      </div>
+      <!-- cartogram chart -->
+      <svg id="cartogram-svg" style="width: 100%"></svg>
+
+      <!-- <img style="position: absolute; width: 60px; /* right: 170px; */ top: 500px" src="vertical_legend.jpg" /> -->
+
+      <div id="correlation_selection">
+        <text class="scatter-x-axis" href="#" id="poverty">Poverty (%)</text>
+        <text class="scatter-x-axis" href="#" id="income">Median Household Income</text>
+        <text class="scatter-x-axis" href="#" id="Gasoline">Gasoline</text>
+        <text class="scatter-x-axis" href="#" id="oil_price">Oil Price</text>
+        <text class="scatter-x-axis" style="line-height: 3em; font-weight: bolder" href="#" id="backToMap"
+          >Return to Cartogram</text
+        >
+      </div>
+    </div>
+
     </section>
+
+      <!-- <img style="position: absolute; width: 60px; /* right: 170px; */ top: 500px" src="vertical_legend.jpg" /> -->
+
 
     <section id="conclusion"> 
         <h2>Conclusion</h2>
@@ -76,8 +188,12 @@
     </footer>
 
     <!-- D3.js and custom script -->
-    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <!-- <script src="https://d3js.org/d3.v6.min.js"></script> -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3-array.v2.js"></script>
     <script src="d3-tip.js"></script>
     <script src="main.js"></script>
+    <script src="./d3-playground/resources/topojson-client.min.js"></script>
+    <script type="module" src="./d3-playground/modules/cartogram-chart/cartogram.js"></script>
 </body>
 </html>
