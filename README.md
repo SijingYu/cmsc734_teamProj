@@ -26,4 +26,4 @@ if you're running Python 3.x or higher, use
 $ python -m http.server 8080
 ```
 
-Now, open your browser and type ```bash http://localhost:8080/ ``` in the URL bar and press enter or go. This action will display the application's web page❤️.
+Now, open your browser and type ``` http://localhost:8080/ ``` in the URL bar and press enter or go. This action will display the application's web page❤️.
