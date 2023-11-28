@@ -3,10 +3,6 @@
 
 
 [Live Link](https://znzhang26.github.io/cmsc734_teamProj/)❤️
-
-
-### Team Members:
-Ziyue Li, Zining Zhang, Sijing Yu (All team members contributed equally to the project).
  
 
 ### Installation: 
