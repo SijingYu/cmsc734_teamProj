@@ -1,5 +1,6 @@
 # CMSC 734 Fall 2023 Final Project (Team 4)
-### A Narrative Visualization of How Social Factors Influence Changes in Electricity Production and Consumption
+### Topic:
+A Narrative Visualization of How Social Factors Influence Changes in Electricity Production and Consumption
 
 
 [Live Link](https://znzhang26.github.io/cmsc734_teamProj/)❤️
