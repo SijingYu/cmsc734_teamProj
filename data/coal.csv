@@ -1,0 +1,51 @@
+side,year,Coal,Co2,Event
+left,1973,389211.603,823.466,Arab oil embargo
+right,.,391810.8,811.637,.
+right,.,405962.432,835.586,.
+right,.,448370.974,924.452,.
+right,.,477125.963,975.98,.
+right,1978,481234.827,973.721,Airline Deregulation Act
+right,1979,527051.248,1070.886,"Energy Crisis, Inflation shoots up"
+right,1980,569273.735,1152.94,"Recession, 13.5% inflation rate"
+right,.,596796.833,1196.762,.
+left,1982,593665.644,1196.638,Negative GDP
+right,.,625211.312,1256.596,.
+right,.,664399.085,1333.337,.
+right,.,693840.766,1383.051,.
+right,.,685055.782,1373.684,.
+right,1987,717894.154,1443.082,Stock market plunges drastically
+right,.,758371.602,1507.427,.
+left,.,772189.74,1534.746,.
+right,.,782566.645,1546.514,.
+right,.,783874.044,1547.174,.
+right,.,795093.664,1568.541,.
+right,.,831645.183,1631.619,.
+right,1994,838354.196,1637.853,North American Free Trade Agreement
+right,.,850230.475,1659.861,.
+top,.,896920.592,1751.523,.
+right,.,921363.598,1796.019,.
+right,.,936619.299,1827.148,.
+right,.,940921.757,1835.402,.
+right,2000,985820.847,1926.365,Dot-Com Bubble Implodes
+right,2001,964432.935,1868.834,September 11 Terrorist Attack
+right,.,977506.712,1888.895,.
+right,.,1005116.159,1929.957,.
+left,.,1016268.012,1942.02,.
+left,.,1037484.561,1982.771,.
+left,.,1026636.031,1952.689,.
+left,2007,1045141.487,1986.25,The Great Recession/Subprime Crisis
+left,.,1040580.089,1958.388,.
+left,2009,933626.951,1740.153, American Recovery and Reinvestment Act
+left,2010,975052.49,1827.564,Financial Regulations Bill
+left,.,932484.085,1722.66,.
+left,.,823551.491,1511.773,.
+left,.,857961.773,1571.303,.
+left,2014,851601.859,1568.488,Obamacare adds Coverage for 20 million
+left,.,738444.083,1351.475,.
+left,2016,678554.486,1241.845, Brazilian economic crisis
+left,.,664993.053,1207.022,.
+left,.,637216.87,1153.026,.
+left,.,538605.6,973.6,.
+left,2020,435826.849,788.146,Covid-19 pandemic and recession
+left,.,501434.545,909.624,.
+left,.,469937.716,847.041,.

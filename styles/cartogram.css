@@ -109,8 +109,8 @@ div.line-chart {
 }
 
 .axis {
-    opacity: 0;
-    font-size: 15px;
+    opacity: 1;
+    font-size: 12px;
 }
 
 #correlation_selection{

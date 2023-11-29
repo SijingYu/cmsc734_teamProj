@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electricity's Social Dance</title>
+
+    <link rel="stylesheet" href="all.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="#">
     <!-- Add other meta tags and links as needed -->
+    <!-- <link rel="stylesheet" href="styles/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" /> -->
     <link rel="stylesheet" href="styles/cartogram.css" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital@0;1&display=swap"
+    rel="stylesheet"
+  />
 
 </head>
 <body>
@@ -27,6 +36,30 @@
         <!-- Add content or data visualization elements here -->
         <p>The reduction in coal usage not only reflects changes in energy production but also leads us directly into the heart of environmental impact, particularly in terms of carbon emissions.
         </p>
+        <div id="stacked-bar" class="mx-auto col-12 text-center"></div>
+      </div>
+      <div class="mx-auto col-12 text-center">
+      <p> The pie chart below gives a more intuitive representation of energy sources decomposition of each year.</p>
+    
+       <h3 id="pieh">Electric power sector energy use decomposition</h3>
+       <div id="pie" class="mt-4 mb-0"></div>
+       <div class="legend-pie col-12 mb-2">
+           <div class="d-inline"><i class="fas fa-circle strongly-like"></i> Coal</div>
+           <div class="d-inline mx-3"><i class="fas fa-circle like"></i> Natural Gas</div>
+           <div class="d-md-inline">
+               <div class="d-inline mr-3"><i class="fas fa-circle dislike"></i> Petroleum</div>
+               <div class="d-inline mr-3"><i class="fas fa-circle strongly-dislike"></i> Nuclear Electric Power</div>
+               <div class="d-inline"> <i class="fas fa-circle unsure"></i> Renewable Energy</div>
+           </div>
+       </div>
+   </div>
+   <div class="buttons text-center col-12 mt-1">
+     <button id="group1" class="btn btn-secondary my-1 col-4 col-md-3 col-lg-2">1980</button>
+     <button id="group2" class="btn btn-secondary my-1 col-4 col-md-3 col-lg-2">1990</button>
+     <button id="group3" class="btn btn-secondary my-1 col-4 col-md-3 col-lg-2">2000</button>
+     <button id="group4" class="btn btn-secondary my-1 col-4 col-md-3 col-lg-2">2010</button>
+     <button id="group5" class="btn btn-secondary my-1 col-4 col-md-3 col-lg-2">2020</button>
+   </div>
     </section>
 
     <!-- RQ2 : Sijing -->
@@ -37,6 +70,8 @@
         <!-- Add content or data visualization elements here -->
         <p>The changes in carbon emissions are closely linked to how different sectors consume electricity, revealing another layer of our evolving energy story.
         </p>
+        <div id="connected_scattered" class="mb-0 mx-2">
+        </div>
     </section>
 
     <!-- RQ3 : Zining -->
@@ -130,7 +165,45 @@
       <img style="width: 600px; vertical-align:middle" src="data/port.png" />
 
     </section>
-
+    <div class="container">
+      <div></div>
+      <h1> Electric Vehicle Breakthroughs since 2022</h1>
+      <div style="padding-top:0.5cm;"> </div>
+      <div class="timeline">
+          <ul>
+              <li>
+                  <div class="content">
+                      <h3>Tax Credit for Electric Vehicales</h3>
+                      <p class="box">Congress approved a reform of EV tax credits: If you bought a new, qualified plug-in electric vehicle (EV) in 2022 or before, you may be eligible for a clean vehicle tax credit up to $7,500 under Internal Revenue Code Section 30D.</p>
+                  </div>
+                  <div class="point"></div>
+                  <div class="date">
+                      <h4>Aug 2022</h4>
+                  </div>
+              </li>
+              <li>
+                  <div class="content">
+                      <h3>Climate Adaptation Plan Progress Report</h3>
+                      <p class="box">Department of Defense (DOD) released the Climate Adaptation Plan Progress Report which labeled climate change as a “national security issue”. DOD requested GM Defense, a division of General Motors, develop battery packs for electric military vehicles.</p>
+                      </div>
+                  <div class="point"></div>
+                  <div class="date">
+                      <h4>Oct 2022</h4>
+                  </div>
+              </li>
+              <!-- <li>
+                  <div class="content">
+                      <h3>Benefits of EV in racing sports</h3>
+                      <p class="box">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                  </div>
+                  <div class="point"></div>
+                  <div class="date">
+                      <h4>Dec 2022</h4>
+                  </div>
+              </li> -->
+          </ul>
+      </div>
+    </div>
 
 
     <section id="conclusion"> 
@@ -151,6 +224,9 @@
     <script src="https://d3js.org/d3-array.v2.js"></script>
     <script src="d3-tip.js"></script>
     <script src="main.js"></script>
+    <script src="barChart.js"></script>
+    <script src="pieChart.js"></script>
+    <script src='scattered.js' type='module'></script>
     <script src="./d3-playground/resources/topojson-client.min.js"></script>
     <script type="module" src="./d3-playground/modules/cartogram-chart/cartogram.js"></script>
 </body>
