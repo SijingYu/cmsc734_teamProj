@@ -92,13 +92,19 @@ d3.csv('mainDatasets.csv').then(function(data) {
 
     // Create a color scale
     const colorScaleRQ4 = d3.scaleSequential()
-    .domain([d3.min(releventDataRQ4, d => d.Value), 
-            0.5*(d3.min(releventDataRQ4, d => d.Value)+d3.max(releventDataRQ4, d => d.Value)), 
-            d3.max(releventDataRQ4, d => d.Value)]) // Adjust domain to fit your data's range
+    .domain([d3.min(releventDataRQ4, d => d.Value), d3.max(releventDataRQ4, d => d.Value)])
     .interpolator(t => {
-        return t < 0.5 
-            ? d3.interpolateRgb("#dbdcd7", "#b3f5c1")(t * 2) // Interpolate between first and second color
-            : d3.interpolateRgb("#b3f5c1", "#058a96")((t - 0.5) * 2); // Interpolate between second and third color
+        // Normalize t based on the scale's domain
+        const [min, max] = colorScaleRQ4.domain();
+        const normalizedT = 30 * (t - min) / (max - min);
+        console.log(normalizedT);
+
+        // Apply interpolation
+        if (normalizedT < 0.5) {
+            return d3.interpolateRgb("#dbdcd7", "#b3f5c1")(normalizedT * 2);
+        } else {
+            return d3.interpolateRgb("#b3f5c1", "#058a96")((normalizedT - 0.5) * 2);
+        }
     });
     // Plot for RQ4
     createSpiralSubplots(datasetsRQ4, '#chart-rq4', years, colorScaleRQ4);
